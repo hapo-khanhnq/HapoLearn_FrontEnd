@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap";
+.banner_section {
+    .container {
+        .banner {
+            background: url(../images/Hapo_Learn_banner1.png) no-repeat;
+            background-size: cover;
+            height: 655px;
+            width: auto;
+        }
+    }
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        li {
+            margin: 0 1.5rem;
+            a {
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
