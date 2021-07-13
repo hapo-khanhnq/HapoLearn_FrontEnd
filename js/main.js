@@ -14,5 +14,4 @@ $(document).ready(function() {
         $('.fa-bars').removeClass('fa-times');
         $('.mobile-nav').removeClass('nav-toggle');
     });*/
-
 });
