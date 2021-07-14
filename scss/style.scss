@@ -1,13 +1,4 @@
 @import 'variable';
-:root {
-    --blue: blue;
-    --black: black;
-    --header_aTag_color: #505353;
-    --header_hoverBackgroundATag_color: #B2D235;
-    --header_hoverATag_color: #FEFFFF;
-    --header_background_color: white;
-}
-
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -18,14 +9,13 @@
     text-decoration: none !important;
     font-weight: 400;
     transition: all .2s linear;
-     ::selection {
+    ::selection {
         background: var(--black);
         color: white;
     }
 }
 
 html {
-    font-size: 62.5%;
     overflow-x: hidden;
 }
 
@@ -63,7 +53,7 @@ header {
             height: auto;
             width: 340px;
             margin-left: 80px;
-            margin-right: 370px;
+            margin-right: 340px;
         }
 
         img {
@@ -146,7 +136,7 @@ header {
         }
 
         li {
-            margin: 0 2rem;
+            margin: 0 1.5rem;
 
             a {
                 transition: 0s;
@@ -170,7 +160,7 @@ header {
 
             .logo-link {
                 width: 150px;
-                margin-right: 35%;
+                margin-right: 32%;
                 margin-left: 0px;
             }
 
