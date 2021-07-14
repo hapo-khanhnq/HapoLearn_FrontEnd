@@ -18,7 +18,7 @@
     text-decoration: none !important;
     font-weight: 400;
     transition: all .2s linear;
-    ::selection {
+     ::selection {
         background: var(--black);
         color: white;
     }
@@ -45,7 +45,7 @@ section {
 
 header {
     background: white;
-    z-index: 1000;
+    z-index: 1;
     width: 100%;
     padding: 30px;
 
@@ -59,21 +59,15 @@ header {
             display: none;
         }
 
-        img {
-            height: 70px;
-            width: auto;
+        .logo-link {
+            height: auto;
+            width: 340px;
             margin-left: 80px;
             margin-right: 370px;
         }
 
-        a {
-            color: var(--header_aTag_color);
-            padding: 8px 15px;
-            &:hover {
-                color: var(--header_hoverATag_color);
-                border-radius: 17px;
-                background-color: var(--header_hoverBackgroundATag_color);
-            }
+        img {
+            width: 100%;
         }
     }
 
@@ -113,26 +107,28 @@ header {
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
+            color: var(--header_aTag_color);
+            padding: 8px 15px;
+            &:hover {
+                color: var(--header_hoverATag_color);
+                border-radius: 17px;
+                background-color: var(--header_hoverBackgroundATag_color);
+            }
         }
     }
 }
 
 @media only screen and(min-width:426px) and (max-width:768px) {
-
     header {
         padding-top: 30px;
 
         .navbar {
             flex-flow: column;
 
-            img {
-                height: 61.74px;
+            .logo-link {
+                width: 300px;
                 margin-left: 0px;
                 margin-right: 0px;
-            }
-
-            a {
-                transition: 0s;
             }
 
             .collapse {
@@ -151,12 +147,15 @@ header {
 
         li {
             margin: 0 2rem;
+
+            a {
+                transition: 0s;
+            }
         }
     }
 }
 
 @media only screen and(max-width:425px) {
-
     header {
         padding: 5px 0px;
 
@@ -169,23 +168,14 @@ header {
                 display: inline-block;
             }
 
-            img {
-                height: 26.75px;
+            .logo-link {
+                width: 150px;
                 margin-right: 35%;
+                margin-left: 0px;
             }
 
             .navbar-collapse {
                 margin: 0px;
-            }
-
-            a {
-                display: block;
-                transition: .1s;
-                font-size: 16px;
-                &:hover {
-                    color: #B2D235;
-                    background: none;
-                }
             }
         }
 
@@ -212,12 +202,22 @@ header {
             width: 100%;
             text-align: center;
             margin-top: 46px;
+
+            a {
+                display: block;
+                transition: .1s;
+                font-size: 16px;
+                &:hover {
+                    color: #B2D235;
+                    background: none;
+                }
+            }
         }
 
         .navbar-collapse {
             margin: 0px;
             transition: .2s;
-            
+
             ul {
                 padding-bottom: 400px;
                 flex-direction: column;
