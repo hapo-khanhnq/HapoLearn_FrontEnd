@@ -5,6 +5,7 @@
     --header_aTag_color: #505353;
     --header_hoverBackgroundATag_color: #B2D235;
     --header_hoverATag_color: #FEFFFF;
+    --header_background_color: white;
 }
 
 * {
@@ -36,9 +37,6 @@ section {
     overflow: hidden;
 }
 
-
-/*header-section*/
-
 .header-active {
     position: fixed;
     top: 0;
@@ -49,30 +47,34 @@ header {
     background: white;
     z-index: 1000;
     width: 100%;
-    padding: 40px 20px;
-    .container-fluid {
+    //padding: 0px;
+    //padding: 40px 20px;
+    padding: 30px;
+    .navbar {
+        background-color: var(--header_background_color);
         display: flex;
         align-items: center;
         justify-content: space-between;
+        .navbar-toggler {
+            display: none;
+        }
         img {
             height: 70px;
             width: auto;
             margin-left: 80px;
+            margin-right: 370px;
+        }
+        a {
+            color: var(--header_aTag_color);
+            padding: 8px 15px;
+            &:hover {
+                color: var(--header_hoverATag_color);
+                border-radius: 17px;
+                background-color: var(--header_hoverBackgroundATag_color);
+            }
         }
     }
-    a {
-        color: var(--header_aTag_color);
-        padding: 8px 15px;
-        &:hover {
-            color: var(--header_hoverATag_color);
-            border-radius: 17px;
-            background-color: var(--header_hoverBackgroundATag_color);
-        }
-    }
-    .navbar {
-        display: none;
-    }
-    nav {
+    .navbar-collapse {
         margin-right: 80px;
         ul {
             margin: 0;
@@ -83,7 +85,11 @@ header {
             list-style: none;
         }
     }
+    .link-for-phone {
+        display: none;
+    }
     .fa-bars {
+        display: none;
         font-size: 2.5rem;
         color: var(--header_aTag_color);
         cursor: pointer;
@@ -93,7 +99,7 @@ header {
         transform: rotate(180deg);
     }
     li {
-        margin: 0 1.5rem;
+        margin: 0 1rem;
         a {
             font-style: normal;
             font-weight: bold;
@@ -105,21 +111,32 @@ header {
 
 /*responsive-ipad*/
 
-@media only screen and (max-width:768px) {
+@media only screen and(min-width:426px) and (max-width:768px) {
     header {
-        .container-fluid {
+        padding-top: 30px;
+        .navbar {
             flex-flow: column;
             img {
                 height: 61.74px;
                 margin-left: 0px;
-            }
-            .nav {
-                margin-top: 30px;
                 margin-right: 0px;
             }
             a {
                 transition: 0s;
             }
+            .collapse {
+                display: block;
+            }
+        }
+        .navbar-collapse {
+            margin-top: 30px;
+            margin-right: 0px;
+            ul {
+                flex-direction: row;
+            }
+        }
+        li {
+            margin: 0 2rem;
         }
     }
     .banner-section {
@@ -134,9 +151,29 @@ header {
 
 @media only screen and(max-width:425px) {
     header {
-        padding: 0px;
-        .container-fluid {
-            display: none;
+        padding: 5px 0px;
+        .navbar {
+            margin: 0;
+            flex-wrap: wrap;
+            flex-flow: wrap;
+            .navbar-toggler {
+                display: inline-block;
+            }
+            img {
+                height: 26.75px;
+                margin-right: 35%;
+            }
+            .navbar-collapse {
+                margin: 0px;
+            }
+            a {
+                display: block;
+                transition: .1s;
+                &:hover {
+                    color: #B2D235;
+                    background: none;
+                }
+            }
         }
         .fa-bars {
             display: block;
@@ -145,14 +182,6 @@ header {
         }
         .navbar-toggler {
             transition: 0.2s;
-        }
-        .navbar {
-            margin: 0;
-            display: flex;
-        }
-        img {
-            height: 26.75px;
-            margin-right: 35%;
         }
         ul {
             display: flex;
@@ -166,23 +195,21 @@ header {
             width: 100%;
             text-align: center;
             margin-top: 46px;
-            a {
-                display: block;
-                transition: 0s;
-                &:hover {
-                    color: #B2D235;
-                    background: none;
-                }
-            }
         }
         .navbar-collapse {
+            margin: 0px;
             transition: .2s;
             ul {
                 padding-bottom: 400px;
+                flex-direction: column;
             }
+        }
+        .link-for-phone {
+            display: list-item;
         }
     }
 }
+
 
 /*banner_section
 
