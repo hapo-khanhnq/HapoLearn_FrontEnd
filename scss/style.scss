@@ -122,7 +122,7 @@ header {
 
   .banner-content>p {
     margin-left: 50px;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--banner_font_family);
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
@@ -133,7 +133,7 @@ header {
     margin-left: 50px;
 
     .top-slogan {
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: var(--banner_font_family);
       font-weight: normal;
       font-size: 50px;
       line-height: 61px;
@@ -142,7 +142,7 @@ header {
     }
 
     .bottom-slogan {
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: var(--banner_font_family);
       font-weight: bold;
       font-size: 50px;
       line-height: 61px;
@@ -159,7 +159,7 @@ header {
   .button {
     margin-left: 50px;
     background: var(--header_hoverBackgroundATag_color);
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--banner_box_shadow);
     border-radius: 35px;
     width: 71%;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -167,7 +167,7 @@ header {
     font-size: 30px;
     line-height: 37px;
     letter-spacing: -0.05em;
-    color: #FFFFFF;
+    color: var(--banner_button_text_color);
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -233,10 +233,12 @@ header {
 
     .banner-slogan {
       margin-left: 20px;
+
       .top-slogan {
         font-size: 30px;
         line-height: 37px;
       }
+
       .bottom-slogan {
         font-size: 30px;
         line-height: 37px;
@@ -320,7 +322,7 @@ header {
 
   .banner-section {
     display: inline-block;
-    background: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
+    background: var(--mobile_banner_background_color);
     height: 690px;
 
     .button {
