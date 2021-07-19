@@ -12,4 +12,23 @@
   --banner_box_shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   --banner_button_text_color: #FFFFFF;
   --banner_font_family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --blank_background: linear-gradient(white, #E5E5E5);
+  --main_courses_html_background_color: #3F6185;
+  --main_courses_laravel_background_color: #DC594C;
+  --main_courses_php_background_color: #556598;
+  --other_courses_css_background_color: #24ABE2;
+  --other_courses_ruby_background_color: #E14E40;
+  --other_courses_java_background_color: #1B75BB;
+  --card_body_fonts_family: "utm_bryantlgregular";
+  --main_courses_card_box_shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  --main_courses_card_text_color: #505353;
+  --main_courses_card_button_box_shadow: inset 0px 1.5px 2px #6F8710;
+}
+
+@font-face {
+  font-family: "utm_bryantlgregular";
+  src: url(../fonts/utm_bryantlg-webfont.woff2) format("woff2"),
+    url(../fonts/utm_bryantlg-webfont.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
