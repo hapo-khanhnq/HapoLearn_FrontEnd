@@ -661,7 +661,7 @@ header {
     align-items: center;
     height: 100%;
 
-    p {
+    .become-member-text {
       font-family: var(--card_body_fonts_family);
       font-weight: bold;
       font-size: 60px;
@@ -672,7 +672,7 @@ header {
       text-align: center;
     }
 
-    .button-become-member {
+    .become-member-button {
       background: var(--banner_button_text_color);
       box-shadow: var(--banner_box_shadow);
       border-radius: 35px;
@@ -1005,12 +1005,12 @@ header {
     height: 267px;
 
     .become-member-container {
-      p {
+      .become-member-text {
         font-size: 35px;
         line-height: 43px;
       }
 
-      .button-become-member {
+      .become-member-button {
         font-size: 20px;
         line-height: 25px;
         width: 33%;
@@ -1423,12 +1423,12 @@ header {
     height: 182px;
 
     .become-member-container {
-      p {
+      .become-member-text {
         font-size: 23px;
         line-height: 28px;
       }
 
-      .button-become-member {
+      .become-member-button {
         width: 53%;
         font-size: 18px;
         line-height: 22px;
