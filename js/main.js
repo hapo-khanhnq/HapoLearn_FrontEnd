@@ -1,12 +1,35 @@
-$(document).ready(function() {
-    $('.fa-bars').click(function() {
+$(document).ready(function () {
+    $('.fa-bars').click(function () {
         $(this).toggleClass('fa-times');
     });
-    $(window).on('load scroll', function() {
+    $(window).on('load scroll', function () {
         if ($(window).scrollTop() > 10) {
             $('header').addClass('header-active');
         } else {
             $('header').removeClass('header-active');
         }
+    });
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        prevArrow: '<div class="left-arrow"><i class="fas fa-angle-left"></i></div>',
+        nextArrow: '<div class="right-arrow"><i class="fas fa-angle-right"></i></div>',
+        responsive: [{
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            },
+
+            {
+                breakpoint: 425,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 });
