@@ -24,10 +24,6 @@ section {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 .header-active {
   position: fixed;
   top: 0;
@@ -54,6 +50,7 @@ header {
       height: auto;
       width: 30%;
       margin-left: 20px;
+      text-decoration: none;
     }
 
     img {
@@ -94,11 +91,12 @@ header {
   li {
     margin: 0 1rem;
 
-    a {
+    .header-link {
       font-weight: bold;
       font-size: 14px;
       color: var(--header_aTag_color);
       padding: 8px 15px;
+      text-decoration: none;
       &:hover {
         color: var(--header_hoverATag_color);
         border-radius: 17px;
@@ -179,6 +177,7 @@ header {
     align-items: center;
     cursor: pointer;
     padding: 13px 67px 20px 67px;
+    text-decoration: none;
   }
 }
 
@@ -257,6 +256,7 @@ header {
       box-shadow: var(--main_courses_card_button_box_shadow);
       border-radius: 22px;
       padding: 10px 35px;
+      text-decoration: none;
     }
   }
 
@@ -366,6 +366,7 @@ header {
       box-shadow: var(--main_courses_card_button_box_shadow);
       border-radius: 22px;
       padding: 10px 35px;
+      text-decoration: none;
     }
   }
 
@@ -689,6 +690,7 @@ header {
       align-items: center;
       cursor: pointer;
       padding: 14px 67px 19px 67px;
+      text-decoration: none;
     }
   }
 }
