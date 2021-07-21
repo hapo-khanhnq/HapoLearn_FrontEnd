@@ -618,8 +618,8 @@ header {
     position: absolute;
     top: 25%;
     left: -15px;
-    background: #FFFFFF;
-    border: 0.5px solid #C4C4C4 !important;
+    background: var(--banner_button_text_color);
+    border: 0.5px solid var(--feedback_arrow_color) !important;
     text-align: center;
     z-index: 1;
     
@@ -634,11 +634,11 @@ header {
     width: 30px;
     height: 30px;
     border-radius: 50px;
-    background: #FFFFFF;
+    background: var(--banner_button_text_color);
     position: absolute;
     top: 25%;
     right: 25px;
-    border: 0.5px solid #C4C4C4 !important;
+    border: 0.5px solid var(--feedback_arrow_color) !important;
     text-align: center;
     z-index: 1;
 
