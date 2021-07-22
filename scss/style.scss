@@ -50,6 +50,7 @@ header {
       height: auto;
       width: 30%;
       margin-left: 20px;
+      text-decoration: none;
     }
 
     img {
@@ -90,11 +91,12 @@ header {
   li {
     margin: 0 1rem;
 
-    a {
+    .header-link {
       font-weight: bold;
       font-size: 14px;
       color: var(--header_aTag_color);
       padding: 8px 15px;
+      text-decoration: none;
       &:hover {
         color: var(--header_hoverATag_color);
         border-radius: 17px;
@@ -175,6 +177,7 @@ header {
     align-items: center;
     cursor: pointer;
     padding: 13px 67px 20px 67px;
+    text-decoration: none;
   }
 }
 
@@ -253,6 +256,7 @@ header {
       box-shadow: var(--main_courses_card_button_box_shadow);
       border-radius: 22px;
       padding: 10px 35px;
+      text-decoration: none;
     }
   }
 
@@ -362,6 +366,7 @@ header {
       box-shadow: var(--main_courses_card_button_box_shadow);
       border-radius: 22px;
       padding: 10px 35px;
+      text-decoration: none;
     }
   }
 
@@ -644,6 +649,98 @@ header {
   }
 }
 
+.become-member-section {
+  margin-top: 110px;
+  height: 500px;
+
+  .become-member-container {
+    background: url(../images/become_member_section_background.png);
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .become-member-text {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 74px;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: var(--banner_button_text_color);
+      text-align: center;
+    }
+
+    .become-member-button {
+      background: var(--banner_button_text_color);
+      box-shadow: var(--banner_box_shadow);
+      border-radius: 35px;
+      width: 27%;
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 37px;
+      letter-spacing: -0.05em;
+      color: var(--become_member_button_text_color);
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      padding: 14px 67px 19px 67px;
+      text-decoration: none;
+    }
+  }
+}
+
+.statistic-section {
+  margin-top: 110px;
+  margin-bottom: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .statistic-title {
+    font-family: var(--card_body_fonts_family);
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: -0.02em;
+    color: var(--banner_banner_content_spanTag_color);
+    border-bottom: 6px solid var(--header_hoverBackgroundATag_color);
+    padding-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+  }
+  
+  .statistic-container {
+    margin-top: 35px;
+
+    .col-top {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: var(--banner_banner-content_pTag_color);
+      text-align: center;
+    }
+
+    .col-bottom {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 60px;
+      line-height: 74px;
+      letter-spacing: -0.05em;
+      color: var(--header_hoverBackgroundATag_color);
+      text-align: center;
+    }
+  }
+}
+
 @media only screen and(min-width:426px) and (max-width:768px) {
   header {
     .navbar {
@@ -902,6 +999,50 @@ header {
 
     .user-avatar {
       margin-left: 30px;
+    }
+  }
+
+  .become-member-section {
+    margin-top: 60px;
+    height: 267px;
+
+    .become-member-container {
+      .become-member-text {
+        font-size: 35px;
+        line-height: 43px;
+      }
+
+      .become-member-button {
+        font-size: 20px;
+        line-height: 25px;
+        width: 33%;
+        padding: 10px 45px 12px 45px;
+      }
+    }
+  }
+
+  .statistic-section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .statistic-title {
+      font-size: 50px;
+      line-height: 61px;
+      border-bottom: 4px solid var(--header_hoverBackgroundATag_color);
+    }
+
+    .statistic-container {
+      margin-top: 28px;
+
+      .col-top {
+        font-size: 40px;
+        line-height: 49px;
+      }
+
+      .col-bottom {
+        font-size: 40px;
+        line-height: 49px;
+      }
     }
   }
 }
@@ -1276,6 +1417,49 @@ header {
     .right-arrow {
       width: 25px;
       height: 25px;
+    }
+  }
+
+  .become-member-section {
+    margin-top: 40px;
+    height: 182px;
+
+    .become-member-container {
+      .become-member-text {
+        font-size: 23px;
+        line-height: 28px;
+      }
+
+      .become-member-button {
+        width: 53%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 7px 22px 8px 32px;  
+      }
+    }
+  }
+
+  .statistic-section {
+    margin: 50px 0px;
+
+    .statistic-title {
+      font-size: 40px;
+      line-height: 49px;
+      border-bottom: 3px solid var(--header_hoverBackgroundATag_color);
+    }
+
+    .statistic-container {
+      margin-top: 26px;
+
+      .col-top {
+        font-size: 40px;
+        line-height: 49px;
+      }
+
+      .col-bottom {
+        font-size: 40px;
+        line-height: 49px;
+      }
     }
   }
 }
