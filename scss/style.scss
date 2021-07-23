@@ -773,6 +773,7 @@ header {
     cursor: pointer;
     background-color: var(--chat_button_background);
     transition: all ease-in-out 0.5s;
+    
     &:hover {
       transform: scale(1.2);
     }
@@ -1814,6 +1815,7 @@ footer {
 
   footer {
     height: 391px;
+
     .footer-container {
       height: 353px;
     }
@@ -1849,6 +1851,7 @@ footer {
 
       li {
         margin-top: 27px;
+
         &:first-child {
           margin-top: 0px;
         }
