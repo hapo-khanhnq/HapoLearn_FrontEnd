@@ -32,4 +32,11 @@ $(document).ready(function () {
             }
         ]
     });
+    $('.chat-button').click(function () {
+        $('.chat-content').addClass('content-show');
+    });
+    $('.cancel-button').click(function () {
+        $('.chat-content').removeClass('content-show');
+    });
+    $('[data-toggle="tooltip"]').tooltip();
 });
