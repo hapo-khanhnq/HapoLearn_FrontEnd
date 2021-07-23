@@ -773,7 +773,7 @@ header {
     cursor: pointer;
     background-color: var(--chat_button_background);
     transition: all ease-in-out 0.5s;
-    
+
     &:hover {
       transform: scale(1.2);
     }
@@ -1003,6 +1003,253 @@ footer {
       color: var(--banner_button_text_color);
       text-align: center;
       margin-top: 7px;
+    }
+  }
+}
+
+.modal {
+  padding: 0;
+
+  .close-modal-button {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--header_hoverBackgroundATag_color);
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    border: none;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .fa-times {
+      width: 100%;
+      color: white;
+      text-align: center;
+    }
+  }
+
+  .modal-body {
+    padding: 0px;
+
+    .nav-tabs {
+      width: 100%;
+      border: 1px solid var(--header_hoverBackgroundATag_color);
+      box-sizing: border-box;
+      background-color: white;
+
+      .active {
+        color: white;
+        background: var(--header_hoverBackgroundATag_color);
+      }
+    }
+
+    .nav-item {
+      width: 50%;
+    }
+
+    .nav-link {
+      border: none;
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 31px;
+      letter-spacing: -0.02em;
+      border-radius: 0%;
+      color: var(--header_hoverBackgroundATag_color);
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  .login-form {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-group {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    width: 100%;
+    
+    .form-group-title {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+      color: var(--banner_banner-content_pTag_color);
+    }
+
+    .form-control {
+      height: 60px;
+    }
+  }
+
+  .form-check {
+    margin-top: 10px;
+
+    .form-check-label {
+      font-family: var(--card_body_fonts_family);
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: var(--banner_banner-content_pTag_color);
+      margin-left: 4px;
+    }
+
+    .form-check-input {
+      color: var(--header_hoverBackgroundATag_color);
+      width: 18px;
+      height: 18px;
+    }
+
+    .forgot-pw-link {
+      float: right;
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      text-decoration-line: underline;
+      color: var(--header_hoverBackgroundATag_color);
+    }
+  }
+
+  .login-button {
+    font-family: var(--card_body_fonts_family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: white;
+    width: 50%;
+    margin-top: 45px;
+    background: var(--header_hoverBackgroundATag_color);
+    box-shadow: var(--main_courses_card_button_box_shadow);
+    border-radius: 22px;
+  }
+
+  .social-network-login-title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--card_body_fonts_family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: var(--banner_banner-content_pTag_color);
+    margin-top: 15px;
+
+    &:before {
+      content: "";
+      flex: 1;
+      border-top: 1px solid var(--modal_login_with_line_color);
+    }
+
+    &:after {
+      content: "";
+      flex: 1;
+      border-top: 1px solid var(--modal_login_with_line_color);
+    }
+  }
+
+  .login-with-google {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--card_body_fonts_family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: white;
+    background: var(--modal_google_background_color);
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+    img {
+      height: 25px;
+    }
+  }
+
+  .login-with-facebook {
+    margin-top: 15px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--card_body_fonts_family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.02em;
+    color: white;
+    background: var(--modal_facebook_backgound_color);
+    height: 55px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+
+    img {
+      height: 30px;
+    }
+  }
+
+  .register-form {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .form-group {
+      margin-top: 30px;
+      margin-bottom: 0px;
+      width: 100%;
+    }
+
+    .form-group-title {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: -0.02em;
+      color: #505353;
+    }
+
+    .form-control {
+      height: 60px;
+    }
+
+    .register-button {
+      font-family: var(--card_body_fonts_family);
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: -0.05em;
+      text-transform: uppercase;
+      color: white;
+      width: 50%;
+      background: var(--header_hoverBackgroundATag_color);
+      box-shadow: var(--main_courses_card_button_box_shadow);
+      border-radius: 22px;
+      margin-bottom: 45px;
+      margin-top: 30px;
     }
   }
 }
@@ -1869,6 +2116,7 @@ footer {
 
       li {
         margin-top: 27px;
+
         &:first-child {
           margin-top: 0px;
         }
@@ -1891,6 +2139,23 @@ footer {
       width: 30px;
       height: 30px;
       margin-right: 11px;
+    }
+  }
+
+  .modal {
+    .close-modal-button {
+      width: 30px;
+      height: 30px;
+      top: -8px;
+      right: -8px;
+    }
+
+    .login-form {
+      padding-bottom: 45px;
+    }
+
+    .register-form {
+      padding-bottom: 45px;
     }
   }
 }
