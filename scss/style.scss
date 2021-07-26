@@ -32,7 +32,7 @@ section {
 
 header {
   background: white;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   padding: 30px;
 
@@ -76,6 +76,10 @@ header {
     display: none;
   }
 
+  .navbar-toggler {
+    outline: none;
+  }
+
   .fa-bars {
     display: none;
     font-size: 2.5rem;
@@ -83,7 +87,7 @@ header {
     cursor: pointer;
     display: none;
   }
-
+  
   .fa-times {
     transform: rotate(180deg);
   }
@@ -92,6 +96,7 @@ header {
     margin: 0 1rem;
 
     .header-link {
+      font-family: var(--font_Open_Sans);
       font-weight: bold;
       font-size: 14px;
       color: var(--header_aTag_color);
@@ -126,7 +131,7 @@ header {
 
   .banner-content > p {
     margin-left: 50px;
-    font-family: var(--banner_font_family);
+    font-family: var(--card_body_fonts_family);
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
@@ -137,7 +142,7 @@ header {
     margin-left: 50px;
 
     .top-slogan {
-      font-family: var(--banner_font_family);
+      font-family: var(--card_body_fonts_family);
       font-weight: normal;
       font-size: 50px;
       line-height: 61px;
@@ -146,7 +151,7 @@ header {
     }
 
     .bottom-slogan {
-      font-family: var(--banner_font_family);
+      font-family: var(--card_body_fonts_family);
       font-weight: bold;
       font-size: 50px;
       line-height: 61px;
@@ -164,8 +169,8 @@ header {
     background: var(--header_hoverBackgroundATag_color);
     box-shadow: var(--banner_box_shadow);
     border-radius: 35px;
-    width: 27%;
-    font-family: var(--banner_font_family);
+    width: 380px;
+    font-family: var(--card_body_fonts_family);
     font-weight: bold;
     font-size: 30px;
     line-height: 37px;
@@ -621,6 +626,7 @@ header {
     border: 0.5px solid var(--feedback_arrow_color);
     text-align: center;
     z-index: 1;
+    cursor: pointer;
     
     i {
       width: 70%;
@@ -639,7 +645,7 @@ header {
     right: 25px;
     border: 0.5px solid var(--feedback_arrow_color);
     text-align: center;
-    z-index: 1;
+    cursor: pointer;
 
     i {
       width: 70%;
@@ -888,7 +894,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 308px;
 
   .footer-container {
     height: 270px;
@@ -1297,6 +1302,7 @@ footer {
       font-size: 16px;
       line-height: 20px;
       padding: 7px 34px 10.14px 36px;
+      width: 210px;
     }
 
     .banner-content {
@@ -2009,6 +2015,7 @@ footer {
     height: 182px;
 
     .become-member-container {
+      background-position: center;
       .become-member-text {
         font-size: 23px;
         line-height: 28px;

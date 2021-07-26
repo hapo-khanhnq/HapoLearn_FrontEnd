@@ -74,7 +74,7 @@ section {
 
 header {
   background: white;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   padding: 30px; }
   header .navbar {
@@ -103,6 +103,8 @@ header {
       list-style: none; }
   header .link-for-phone {
     display: none; }
+  header .navbar-toggler {
+    outline: none; }
   header .fa-bars {
     display: none;
     font-size: 2.5rem;
@@ -114,6 +116,7 @@ header {
   header li {
     margin: 0 1rem; }
     header li .header-link {
+      font-family: var(--font_Open_Sans);
       font-weight: bold;
       font-size: 14px;
       color: var(--header_aTag_color);
@@ -139,7 +142,7 @@ header {
     margin-top: 0px; }
   .banner-section .banner-content > p {
     margin-left: 50px;
-    font-family: var(--banner_font_family);
+    font-family: var(--card_body_fonts_family);
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
@@ -147,14 +150,14 @@ header {
   .banner-section .banner-slogan {
     margin-left: 50px; }
     .banner-section .banner-slogan .top-slogan {
-      font-family: var(--banner_font_family);
+      font-family: var(--card_body_fonts_family);
       font-weight: normal;
       font-size: 50px;
       line-height: 61px;
       letter-spacing: -0.05em;
       color: var(--banner_banner_content_spanTag_color); }
     .banner-section .banner-slogan .bottom-slogan {
-      font-family: var(--banner_font_family);
+      font-family: var(--card_body_fonts_family);
       font-weight: bold;
       font-size: 50px;
       line-height: 61px;
@@ -167,8 +170,8 @@ header {
     background: var(--header_hoverBackgroundATag_color);
     box-shadow: var(--banner_box_shadow);
     border-radius: 35px;
-    width: 27%;
-    font-family: var(--banner_font_family);
+    width: 380px;
+    font-family: var(--card_body_fonts_family);
     font-weight: bold;
     font-size: 30px;
     line-height: 37px;
@@ -507,7 +510,8 @@ header {
     background: var(--banner_button_text_color);
     border: 0.5px solid var(--feedback_arrow_color);
     text-align: center;
-    z-index: 1; }
+    z-index: 1;
+    cursor: pointer; }
     .feedback-section .left-arrow i {
       width: 70%;
       height: auto;
@@ -522,7 +526,7 @@ header {
     right: 25px;
     border: 0.5px solid var(--feedback_arrow_color);
     text-align: center;
-    z-index: 1; }
+    cursor: pointer; }
     .feedback-section .right-arrow i {
       width: 70%;
       height: auto;
@@ -719,8 +723,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 308px; }
+  flex-direction: column; }
   footer .footer-container {
     height: 270px;
     background: var(--footer_container_background); }
@@ -1020,7 +1023,8 @@ footer {
       margin-left: 20px;
       font-size: 16px;
       line-height: 20px;
-      padding: 7px 34px 10.14px 36px; }
+      padding: 7px 34px 10.14px 36px;
+      width: 210px; }
     .banner-section .banner-content {
       margin-top: 0px; }
     .banner-section .banner-content > p {
@@ -1469,14 +1473,16 @@ footer {
   .become-member-section {
     margin-top: 40px;
     height: 182px; }
-    .become-member-section .become-member-container .become-member-text {
-      font-size: 23px;
-      line-height: 28px; }
-    .become-member-section .become-member-container .become-member-button {
-      width: 53%;
-      font-size: 18px;
-      line-height: 22px;
-      padding: 7px 22px 8px 32px; }
+    .become-member-section .become-member-container {
+      background-position: center; }
+      .become-member-section .become-member-container .become-member-text {
+        font-size: 23px;
+        line-height: 28px; }
+      .become-member-section .become-member-container .become-member-button {
+        width: 53%;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 7px 22px 8px 32px; }
 
   .statistic-section {
     margin: 50px 0px; }
