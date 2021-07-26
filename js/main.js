@@ -2,6 +2,10 @@ $(document).ready(function () {
     $('.fa-bars').click(function () {
         $(this).toggleClass('fa-times');
     });
+    $('.header-link').click(function () {
+        $('.header-link').removeClass('header-link-active');
+        $(this).addClass('header-link-active');
+    });
     $(window).on('load scroll', function () {
         if ($(window).scrollTop() > 10) {
             $('header').addClass('header-active');

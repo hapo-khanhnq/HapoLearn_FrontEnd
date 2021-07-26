@@ -102,11 +102,18 @@ header {
       color: var(--header_aTag_color);
       padding: 8px 15px;
       text-decoration: none;
+
       &:hover {
         color: var(--header_hoverATag_color);
         border-radius: 17px;
         background-color: var(--header_hoverBackgroundATag_color);
       }
+    }
+
+    .header-link-active {
+      color: var(--header_hoverATag_color);
+      border-radius: 17px;
+      background-color: var(--header_hoverBackgroundATag_color);
     }
   }
 }
@@ -183,6 +190,10 @@ header {
     cursor: pointer;
     padding: 13px 67px 20px 67px;
     text-decoration: none;
+
+    &:hover {
+      color: var(--header_aTag_color);
+    }
   }
 }
 
@@ -262,6 +273,10 @@ header {
       border-radius: 22px;
       padding: 10px 35px;
       text-decoration: none;
+
+      &:hover {
+        color: var(--header_aTag_color);
+      }
     }
   }
 
@@ -372,6 +387,10 @@ header {
       border-radius: 22px;
       padding: 10px 35px;
       text-decoration: none;
+
+      &:hover {
+        color: var(--header_aTag_color);
+      }
     }
   }
 
@@ -396,6 +415,12 @@ header {
     letter-spacing: -0.02em;
     color: #90AB26;
     text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: yellowgreen;
+    }
 
     img {
       width: 8%;
@@ -683,7 +708,7 @@ header {
       background: var(--banner_button_text_color);
       box-shadow: var(--banner_box_shadow);
       border-radius: 35px;
-      width: 27%;
+      width: 404px;
       font-family: var(--card_body_fonts_family);
       font-weight: bold;
       font-size: 30px;
@@ -697,6 +722,11 @@ header {
       cursor: pointer;
       padding: 14px 67px 19px 67px;
       text-decoration: none;
+
+      &:hover {
+        background: var(--become_member_button_hover_color);
+        color: var(--header_aTag_color);
+      }
     }
   }
 }
@@ -947,7 +977,6 @@ footer {
       line-height: 25px;
       letter-spacing: -0.05em;
       color: var(--banner_button_text_color);
-      text-decoration: none;
     }
   }
 
@@ -969,7 +998,6 @@ footer {
       line-height: 25px;
       letter-spacing: -0.05em;
       color: var(--banner_button_text_color);
-      text-decoration: none;
     }
   }
 
@@ -977,7 +1005,7 @@ footer {
     list-style: none;
     display: flex;
     margin-top: 124px;
-    margin-right: 173px;
+    //margin-right: 173px;
   }
 
   .right-footer-icon {
@@ -1534,8 +1562,8 @@ footer {
       .become-member-button {
         font-size: 20px;
         line-height: 25px;
-        width: 33%;
         padding: 10px 45px 12px 45px;
+        width: 250px;
       }
     }
   }
@@ -1688,10 +1716,16 @@ footer {
         display: block;
         transition: .1s;
         font-size: 16px;
+
         &:hover {
           color: var(--header_hoverBackgroundATag_color);
           background: none;
         }
+      }
+
+      .header-link-active {
+          color: var(--header_hoverBackgroundATag_color);
+          background: none;
       }
     }
 
@@ -1725,7 +1759,7 @@ footer {
       font-size: 18px;
       line-height: 22px;
       padding: 12px 52px 12.42px 52px;
-      width: 65%;
+      width: 250px;
     }
 
     .banner-content > p {
@@ -2024,10 +2058,10 @@ footer {
       }
 
       .become-member-button {
-        width: 53%;
         font-size: 18px;
         line-height: 22px;
-        padding: 7px 22px 8px 32px;  
+        padding: 7px 22px 8px 32px;
+        width: 200px;
       }
     }
   }

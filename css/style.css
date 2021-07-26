@@ -29,6 +29,7 @@
   --feedback_star_color: #F2C54F;
   --feedback_arrow_color: #C4C4C4;
   --become_member_button_text_color: #90AB26;
+  --become_member_button_hover_color: #D7E897;
   --chat_box_shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   --font_Open_Sans: "Open Sans", sans-serif;
   --login_messenger_button_background: #3184F7;
@@ -126,6 +127,10 @@ header {
         color: var(--header_hoverATag_color);
         border-radius: 17px;
         background-color: var(--header_hoverBackgroundATag_color); }
+    header li .header-link-active {
+      color: var(--header_hoverATag_color);
+      border-radius: 17px;
+      background-color: var(--header_hoverBackgroundATag_color); }
 
 .banner-section {
   width: 100%;
@@ -184,6 +189,8 @@ header {
     cursor: pointer;
     padding: 13px 67px 20px 67px;
     text-decoration: none; }
+    .banner-section .button:hover {
+      color: var(--header_aTag_color); }
 
 .space-between-banner-courses {
   background: var(--blank_background);
@@ -244,6 +251,8 @@ header {
       border-radius: 22px;
       padding: 10px 35px;
       text-decoration: none; }
+      .main-courses-section .card-body .card-button:hover {
+        color: var(--header_aTag_color); }
   .main-courses-section .html {
     background: var(--main_courses_html_background_color); }
   .main-courses-section .laravel {
@@ -327,6 +336,8 @@ header {
       border-radius: 22px;
       padding: 10px 35px;
       text-decoration: none; }
+      .other-courses-section .card-body .card-button:hover {
+        color: var(--header_aTag_color); }
   .other-courses-section .css {
     background: var(--other_courses_css_background_color); }
   .other-courses-section .ruby {
@@ -341,7 +352,11 @@ header {
     line-height: 49px;
     letter-spacing: -0.02em;
     color: #90AB26;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer; }
+    .other-courses-section .view-all-courses:hover {
+      color: yellowgreen; }
     .other-courses-section .view-all-courses img {
       width: 8%; }
 
@@ -556,7 +571,7 @@ header {
       background: var(--banner_button_text_color);
       box-shadow: var(--banner_box_shadow);
       border-radius: 35px;
-      width: 27%;
+      width: 404px;
       font-family: var(--card_body_fonts_family);
       font-weight: bold;
       font-size: 30px;
@@ -570,6 +585,9 @@ header {
       cursor: pointer;
       padding: 14px 67px 19px 67px;
       text-decoration: none; }
+      .become-member-section .become-member-container .become-member-button:hover {
+        background: var(--become_member_button_hover_color);
+        color: var(--header_aTag_color); }
 
 .statistic-section {
   margin-top: 110px;
@@ -760,8 +778,7 @@ footer {
       font-size: 20px;
       line-height: 25px;
       letter-spacing: -0.05em;
-      color: var(--banner_button_text_color);
-      text-decoration: none; }
+      color: var(--banner_button_text_color); }
   footer .right-footer-menu {
     display: flex;
     flex-direction: column;
@@ -776,13 +793,11 @@ footer {
       font-size: 20px;
       line-height: 25px;
       letter-spacing: -0.05em;
-      color: var(--banner_button_text_color);
-      text-decoration: none; }
+      color: var(--banner_button_text_color); }
   footer .right-footer-icons {
     list-style: none;
     display: flex;
-    margin-top: 124px;
-    margin-right: 173px; }
+    margin-top: 124px; }
   footer .right-footer-icon {
     width: 50px;
     height: 50px;
@@ -1171,8 +1186,8 @@ footer {
     .become-member-section .become-member-container .become-member-button {
       font-size: 20px;
       line-height: 25px;
-      width: 33%;
-      padding: 10px 45px 12px 45px; }
+      padding: 10px 45px 12px 45px;
+      width: 250px; }
 
   .statistic-section {
     margin-top: 60px;
@@ -1268,6 +1283,9 @@ footer {
         header li .header-link:hover {
           color: var(--header_hoverBackgroundATag_color);
           background: none; }
+      header li .header-link-active {
+        color: var(--header_hoverBackgroundATag_color);
+        background: none; }
     header .navbar-collapse {
       margin: 0px;
       transition: .2s; }
@@ -1289,7 +1307,7 @@ footer {
       font-size: 18px;
       line-height: 22px;
       padding: 12px 52px 12.42px 52px;
-      width: 65%; }
+      width: 250px; }
     .banner-section .banner-content > p {
       margin-left: 80px;
       font-size: 16px;
@@ -1481,10 +1499,10 @@ footer {
         font-size: 23px;
         line-height: 28px; }
       .become-member-section .become-member-container .become-member-button {
-        width: 53%;
         font-size: 18px;
         line-height: 22px;
-        padding: 7px 22px 8px 32px; }
+        padding: 7px 22px 8px 32px;
+        width: 200px; }
 
   .statistic-section {
     margin: 50px 0px; }
