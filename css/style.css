@@ -1014,7 +1014,7 @@ footer {
       flex-direction: row; }
   header li {
     margin: 0 1.5rem; }
-    header li a {
+    header li .header-link {
       transition: 0s; }
 
   .banner-section {
@@ -1261,11 +1261,11 @@ footer {
       width: 100%;
       text-align: center;
       margin-top: 46px; }
-      header li a {
+      header li .header-link {
         display: block;
         transition: .1s;
         font-size: 16px; }
-        header li a:hover {
+        header li .header-link:hover {
           color: var(--header_hoverBackgroundATag_color);
           background: none; }
     header .navbar-collapse {
@@ -1273,7 +1273,8 @@ footer {
       transition: .2s; }
       header .navbar-collapse ul {
         flex-direction: column;
-        justify-content: space-between; }
+        justify-content: space-between;
+        padding-bottom: 200px; }
     header .link-for-phone {
       display: list-item; }
 
