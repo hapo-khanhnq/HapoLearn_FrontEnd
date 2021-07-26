@@ -1274,7 +1274,8 @@ footer {
       header .navbar-collapse ul {
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: 200px; }
+        padding-bottom: 200px;
+        background-color: white; }
     header .link-for-phone {
       display: list-item; }
 
