@@ -435,7 +435,7 @@ header {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
 
     &:hover {
       cursor: pointer;
@@ -487,6 +487,7 @@ header {
       text-align: center;
       letter-spacing: -0.02em;
       color: var(--header_hoverATag_color);
+      -webkit-text-stroke-width: 2px;
     }
 
     ul {
