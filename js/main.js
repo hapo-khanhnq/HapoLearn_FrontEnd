@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.fa-bars').click(function () {
         $(this).toggleClass('fa-times');
+        $('header').toggleClass('header-active');
     });
     $('.header-link').click(function () {
         $('.header-link').removeClass('header-link-active');
@@ -19,6 +20,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         prevArrow: '<div class="left-arrow"><i class="fas fa-angle-left"></i></div>',
         nextArrow: '<div class="right-arrow"><i class="fas fa-angle-right"></i></div>',
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [{
                 breakpoint: 769,
                 settings: {
