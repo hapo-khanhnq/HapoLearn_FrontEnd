@@ -6,6 +6,9 @@ $(document).ready(function () {
     $('.header-link').click(function () {
         $('.header-link').removeClass('header-link-active');
         $(this).addClass('header-link-active');
+        $('.fa-bars').toggleClass('fa-times');
+        $('.navbar-toggler').toggleClass('collapsed');
+        $('.collapse').toggleClass('show');
     });
     $(window).on('load scroll', function () {
         if ($(window).scrollTop() > 10) {

@@ -1181,6 +1181,42 @@ footer {
       cursor: pointer;
     }
 
+    .form-check-input:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      border: 1px solid var(--chabot_name_color);
+      background-color: white;
+      border-radius: 3px;
+    }
+
+    .form-check-input:checked:before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: -2px;
+      left: -2px;
+      background-color: var(--header_hoverBackgroundATag_color);
+      border-radius: 3px;
+    }
+
+    .form-check-input:checked:after {
+      content: "";
+      display: block;
+      width: 6px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 2px;
+      left: 5px;
+    }
+
     .forgot-pw-link {
       float: right;
       font-family: var(--card_body_fonts_family);
@@ -1240,12 +1276,14 @@ footer {
       content: "";
       flex: 1;
       border-top: 1px solid var(--modal_login_with_line_color);
+      margin-right: 4px;
     }
 
     &:after {
       content: "";
       flex: 1;
       border-top: 1px solid var(--modal_login_with_line_color);
+      margin-left: 4px;
     }
   }
 
@@ -1473,7 +1511,7 @@ footer {
       }
 
       .card-button {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px;
         letter-spacing: -0.05em;
         padding: 6px 21px;
@@ -1541,7 +1579,7 @@ footer {
       }
 
       .card-button {
-        font-size: 10px;
+        font-size: 12px;
         line-height: 12px;
         letter-spacing: -0.05em;
         padding: 6px 21px;
@@ -1768,6 +1806,7 @@ footer {
 
       .navbar-toggler {
         display: inline-block;
+        border: none;
       }
 
       .logo-link {
@@ -1783,7 +1822,7 @@ footer {
 
     .fa-bars {
       display: block;
-      font-size: 20px;
+      font-size: 25px;
       transition: 0.2s;
     }
 
