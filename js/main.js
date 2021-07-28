@@ -8,7 +8,7 @@ $(document).ready(function () {
     $('.header-link').click(function () {
         $('.header-link').removeClass('header-link-active');
         $(this).addClass('header-link-active');
-        $('.fa-bars').toggleClass('fa-times');
+        $('.fa-bars').removeClass('fa-times');
         $('.navbar-toggler').addClass('collapsed');
         $('.collapse').removeClass('show');
         $('header').removeClass('ip-header-active');
