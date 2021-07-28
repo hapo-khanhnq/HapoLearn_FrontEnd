@@ -1183,24 +1183,16 @@ footer {
       cursor: pointer;
     }
 
-    .form-check-input:before {
+    .form-check-input:checked:before {
       content: "";
       display: block;
       position: absolute;
       width: 18px;
       height: 18px;
-      background-color: var(--chat_with_hapo_text_color);
-      border-radius: 3px;
-    }
-
-    .form-check-input:checked:before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 19px;
-      height: 18px;
-      left: -1px;
+      //left: -2px;
+      //top: -2px;
       background-color: var(--header_hoverBackgroundATag_color);
+      border-radius: 3px;
     }
 
     .form-check-input:checked:after {
