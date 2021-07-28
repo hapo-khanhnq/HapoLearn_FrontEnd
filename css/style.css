@@ -7,6 +7,7 @@
   --header_hoverBackgroundATag_color: #B2D235;
   --header_hoverATag_color: #FEFFFF;
   --header_background_color: white;
+  --header_ip_background_color: #FFFBFB;
   --banner_banner-content_pTag_color: #505353;
   --banner_banner_content_spanTag_color: #11114E;
   --mobile_banner_background_color: linear-gradient(180deg, #FFFBFB 87.5%, #E7E9EE 100%);
@@ -398,7 +399,7 @@ header {
   .whyhapo-section .col-left {
     display: flex;
     flex-direction: column;
-    padding-right: 65px; }
+    padding-right: 0px; }
     .whyhapo-section .col-left p {
       margin-top: 220px;
       font-family: var(--card_body_fonts_family);
@@ -426,7 +427,8 @@ header {
     justify-content: center;
     align-items: center; }
   .whyhapo-section .img-laptop-tabet {
-    height: 544px; }
+    height: 500px;
+    margin-top: 20px; }
     .whyhapo-section .img-laptop-tabet img {
       height: 100%; }
 
@@ -613,8 +615,7 @@ header {
       padding: 14px 67px 19px 67px;
       text-decoration: none; }
       .become-member-section .become-member-container .become-member-button:hover {
-        color: var(--become_member_button_hover_color);
-        transform: scale(1.1); }
+        color: var(--header_aTag_color); }
 
 .statistic-section {
   margin-top: 110px;
@@ -937,19 +938,16 @@ footer {
       position: absolute;
       width: 18px;
       height: 18px;
-      border: 1px solid var(--chabot_name_color);
-      background-color: white;
+      background-color: var(--chat_with_hapo_text_color);
       border-radius: 3px; }
     .modal .form-check .form-check-input:checked:before {
       content: "";
       display: block;
       position: absolute;
-      width: 20px;
-      height: 20px;
-      top: -2px;
-      left: -2px;
-      background-color: var(--header_hoverBackgroundATag_color);
-      border-radius: 3px; }
+      width: 19px;
+      height: 18px;
+      left: -1px;
+      background-color: var(--header_hoverBackgroundATag_color); }
     .modal .form-check .form-check-input:checked:after {
       content: "";
       display: block;
@@ -1099,8 +1097,10 @@ footer {
 
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   header {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    background-color: var(--header_ip_background_color); }
     header .navbar {
+      background-color: var(--header_ip_background_color);
       flex-flow: column; }
       header .navbar .logo-link {
         margin-left: 0px;
@@ -1352,9 +1352,14 @@ footer {
     height: 40px;
     margin-right: 30px; } }
 @media only screen and (max-width: 425px) {
+  .ip-header-active {
+    background-color: white; }
+
   header {
+    background-color: var(--header_ip_background_color);
     padding: 5px 0px; }
     header .navbar {
+      background-color: var(--header_ip_background_color);
       margin: 0;
       flex-wrap: wrap;
       flex-flow: wrap; }
@@ -1367,12 +1372,14 @@ footer {
         margin-left: 0px; }
       header .navbar .navbar-collapse {
         margin: 0px; }
+    header .navbar-active {
+      background-color: white; }
     header .fa-bars {
       display: block;
       font-size: 25px;
-      transition: 0.2s; }
+      transition: 0.1s; }
     header .navbar-toggler {
-      transition: 0.2s; }
+      transition: 0.1s; }
     header ul {
       display: flex;
       align-items: center;
@@ -1385,7 +1392,7 @@ footer {
       margin-top: 46px; }
       header li .header-link {
         display: block;
-        transition: .1s;
+        transition: 0.05s;
         font-size: 16px; }
         header li .header-link:hover {
           color: var(--header_hoverBackgroundATag_color);
@@ -1395,7 +1402,7 @@ footer {
         background: none; }
     header .navbar-collapse {
       margin: 0px;
-      transition: .2s; }
+      transition: 0.1s; }
       header .navbar-collapse ul {
         flex-direction: column;
         justify-content: space-between;

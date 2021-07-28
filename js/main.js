@@ -2,20 +2,18 @@ $(document).ready(function () {
     $('.fa-bars').click(function () {
         $(this).toggleClass('fa-times');
         $('header').toggleClass('header-active');
+        $('.navbar').toggleClass('navbar-active');
+        $('header').toggleClass('ip-header-active');
     });
     $('.header-link').click(function () {
         $('.header-link').removeClass('header-link-active');
         $(this).addClass('header-link-active');
         $('.fa-bars').toggleClass('fa-times');
-        $('.navbar-toggler').toggleClass('collapsed');
-        $('.collapse').toggleClass('show');
-    });
-    $(window).on('load scroll', function () {
-        if ($(window).scrollTop() > 10) {
-            $('header').addClass('header-active');
-        } else {
-            $('header').removeClass('header-active');
-        }
+        $('.navbar-toggler').addClass('collapsed');
+        $('.collapse').removeClass('show');
+        $('header').removeClass('ip-header-active');
+        $('.navbar').removeClass('navbar-active');
+        $('header').removeClass('header-active');
     });
     $('.slider').slick({
         infinite: true,

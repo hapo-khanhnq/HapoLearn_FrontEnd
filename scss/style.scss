@@ -468,6 +468,7 @@ header {
     position: absolute;
     left: 0px;
     margin-top: -170px;
+
     img {
       height: 100%;
     }
@@ -476,7 +477,7 @@ header {
   .col-left {
     display: flex;
     flex-direction: column;
-    padding-right: 65px;
+    padding-right: 0px;
 
     p {
       margin-top: 220px;
@@ -516,7 +517,8 @@ header {
   }
 
   .img-laptop-tabet {
-    height: 544px;
+    height: 500px;
+    margin-top: 20px;
 
     img {
       height: 100%;
@@ -755,8 +757,7 @@ header {
       text-decoration: none;
 
       &:hover {
-        color: var(--become_member_button_hover_color);
-        transform: scale(1.1);
+        color: var(--header_aTag_color);
       }
     }
   }
@@ -1188,8 +1189,7 @@ footer {
       position: absolute;
       width: 18px;
       height: 18px;
-      border: 1px solid var(--chabot_name_color);
-      background-color: white;
+      background-color: var(--chat_with_hapo_text_color);
       border-radius: 3px;
     }
 
@@ -1197,12 +1197,10 @@ footer {
       content: "";
       display: block;
       position: absolute;
-      width: 20px;
-      height: 20px;
-      top: -2px;
-      left: -2px;
+      width: 19px;
+      height: 18px;
+      left: -1px;
       background-color: var(--header_hoverBackgroundATag_color);
-      border-radius: 3px;
     }
 
     .form-check-input:checked:after {
@@ -1392,8 +1390,10 @@ footer {
 @media only screen and(min-width:426px) and (max-width:768px) {
   header {
     padding-bottom: 20px;
+    background-color: var(--header_ip_background_color);
 
     .navbar {
+      background-color: var(--header_ip_background_color);
       flex-flow: column;
 
       .logo-link {
@@ -1797,10 +1797,16 @@ footer {
 }
 
 @media only screen and(max-width:425px) {
+  .ip-header-active {
+    background-color: white;
+  }
+
   header {
+    background-color: var(--header_ip_background_color);
     padding: 5px 0px;
 
     .navbar {
+      background-color: var(--header_ip_background_color);
       margin: 0;
       flex-wrap: wrap;
       flex-flow: wrap;
@@ -1821,14 +1827,18 @@ footer {
       }
     }
 
+    .navbar-active {
+      background-color: white;
+    }
+
     .fa-bars {
       display: block;
       font-size: 25px;
-      transition: 0.2s;
+      transition: 0.1s;
     }
 
     .navbar-toggler {
-      transition: 0.2s;
+      transition: 0.1s;
     }
 
     ul {
@@ -1846,7 +1856,7 @@ footer {
 
       .header-link {
         display: block;
-        transition: .1s;
+        transition: 0.05s;
         font-size: 16px;
 
         &:hover {
@@ -1863,7 +1873,7 @@ footer {
 
     .navbar-collapse {
       margin: 0px;
-      transition: .2s;
+      transition: 0.1s;
 
       ul {
         flex-direction: column;
